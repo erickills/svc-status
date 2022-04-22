@@ -15,6 +15,7 @@ for i in services:
 
 status = sorted(status, key = lambda x: x[1], reverse = True)
 
-with open('/home/eric/projects/svc-status/status-results.csv','w') as file: # change the path where to save the result
+# change the path where to save the result
+with open('/home/eric/projects/svc-status/status-results.csv','w') as file: 
     writer = csv.writer(file)
     writer.writerows(status)
